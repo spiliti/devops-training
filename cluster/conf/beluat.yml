@@ -416,6 +416,14 @@ finance-collections-voucher-consumer:
 
 # financials >>>>>>>>>>>>>>>>>>>>>>>>>>>>
 
+
+hr-employee-v2:
+  replicas: 1
+  images:
+    - egovio/hr-employee-v2
+  db_migration_image: egovio/hr-employee-v2-db
+  db-url: "jdbc:postgresql://bel-uat-db.cgj6zer18zzc.ap-south-1.rds.amazonaws.com:5432/bel_uat_db?currentSchema=hr_employee_v2_schema"
+
 egf-master:
   replicas: 2
   images:
