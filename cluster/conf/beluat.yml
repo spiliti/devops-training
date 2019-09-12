@@ -160,15 +160,15 @@ egov-data-uploader:
   internal-file-folder-path: "/tmp"
   java-args: "-Dspring.profiles.active=production"
 
-egov-pg-service:
-  replicas: 1
-  images:
-    - egovio/egov-pg-service
-  db_migration_image: egovio/egov-pg-service-db
-  payu-url: "test.payu.in"
-  payu-url-status: "test.payu.in"
-  heap: "-Xmx192m -Xms192m -XX:TieredStopAtLevel=1"
-  java-args: "-Dspring.profiles.active=production"
+# egov-pg-service:
+#   replicas: 1
+#   images:
+#     - egovio/egov-pg-service
+#   db_migration_image: egovio/egov-pg-service-db
+#   payu-url: "test.payu.in"
+#   payu-url-status: "test.payu.in"
+#   heap: "-Xmx192m -Xms192m -XX:TieredStopAtLevel=1"
+#   java-args: "-Dspring.profiles.active=production"
 
 telemetry:
   replicas: 1
